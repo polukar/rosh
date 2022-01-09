@@ -2012,6 +2012,9 @@ h5.h5 {
   border-radius: 20px;
   margin-bottom: 20px;
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .gallery__description {
