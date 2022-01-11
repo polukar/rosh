@@ -31,26 +31,925 @@
     <link rel="stylesheet" href="./assets/css/common.css">
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
   </head>
-  <body class="body">
+  <body class="body" data-barba="wrapper">
     <header class="header header--transparent"> 
-      <div class="container --flex --jcsb --aicn"><a class="header__logo" href="#"> <img src="./assets/img/logo.svg" alt=""></a>
+      <div class="container --flex --jcsb --aicn"><a class="header__logo" href="index.html"> <img src="./assets/img/logo.svg" alt=""></a>
         <div class="header__left --flex --aicn">
           <div class="header__contacts"> 
             <div class="header__contact">8 (495) <b>132-01-69</b></div>
             <div class="header__contact header__contact--small">Пн-Сб, с <b>10:00</b> до <b>21:00</b> </div>
           </div>
-          <button class="btn btn--white">Подобрать услугу</button>
+          <button class="btn btn--white --openfilter">Подобрать услугу</button>
         </div>
         <div class="header__right --flex --aicn">
           <button class="btn btn-link">Записаться на прием</button>
-          <button class="btn btn-link">Войти</button>
-          <button class="burger"><img src="./assets/img/burger.svg" alt=""></button>
+          <button class="btn btn-link enter">Войти
+            <div class="enter__panel">
+              <div class="enter__btn text-small">Редактировать</div>
+              <div class="enter__btn text-small">Выйти</div>
+            </div>
+          </button>
+          <button class="burger"></button>
         </div>
       </div>
-    </header><a class="phone" href="#">
+    </header>
+    <div class="menu"> 
+      <nav class="nav">
+        <div class="nav__link"><a href="#">Услуги</a></div>
+        <div class="nav__link"><a href="#">Проблемы</a></div>
+        <div class="nav__link"><a href="#">О клинике</a></div>
+        <div class="nav__group">
+          <div class="nav__link-inner"> <a href="">Оборудование</a></div>
+          <div class="nav__link-inner"> <a href="">Галерея</a></div>
+          <div class="nav__link-inner"> <a href="">Специалисты</a></div>
+        </div>
+        <div class="nav__link"><a href="#">Блог</a></div>
+        <div class="nav__link"><a href="#">Косметика</a></div>
+        <div class="nav__link"><a href="#">Контакты</a></div>
+      </nav>
+      <div class="socials socials-menu"> <a class="socials__link" href="#">
+              <svg class="svgsprite _socials-1">
+                <use xlink:href="assets/img/sprites/svgsprites.svg#socials-1"></use>
+              </svg></a><a class="socials__link" href="#"> 
+              <svg class="svgsprite _socials-2">
+                <use xlink:href="assets/img/sprites/svgsprites.svg#socials-2"></use>
+              </svg></a><a class="socials__link" href="#"> 
+              <svg class="svgsprite _socials-4">
+                <use xlink:href="assets/img/sprites/svgsprites.svg#socials-4"></use>
+              </svg></a><a class="socials__link" href="#"> 
+              <svg class="svgsprite _socials-3">
+                <use xlink:href="assets/img/sprites/svgsprites.svg#socials-3"></use>
+              </svg></a></div>
+      <div class="menu__contacts"> 
+        <p class="text-small text-grey">г. Москва, Ростовская набережная д. 5, пом. 9</p><a class="text-small text-grey" href="#"> info@medcenterrosh.ru</a>
+      </div><a class="en-version" href="#"> 
+            <svg class="svgsprite _web">
+              <use xlink:href="assets/img/sprites/svgsprites.svg#web"></use>
+            </svg>English version
+            <svg class="svgsprite _arrow-link">
+              <use xlink:href="assets/img/sprites/svgsprites.svg#arrow-link"></use>
+            </svg></a>
+    </div><a class="phone" href="#">
           <svg class="svgsprite _phone">
             <use xlink:href="assets/img/sprites/svgsprites.svg#phone"></use>
           </svg></a>
+    <div class="mainfilter">
+      <div class="mainfilter__wrap row"> 
+        <div class="col-lg-9">
+          <div class="mainfilter__left"> 
+            <div class="mainfilter__tab-list">
+              <div class="mainfilter__tab-item active">Услуги</div>
+              <div class="mainfilter__tab-item">Проблемы</div>
+              <div class="mainfilter__tab-item">Симптомы</div>
+            </div>
+            <div class="mainfilter__tabs">
+              <div class="mainfilter__tab active"> 
+                <div class="accardeon"> 
+                  <div class="accardeon__main"> 
+                    <div class="accardeon__name --yellow">Лицо</div>
+                  </div>
+                  <div class="accardeon__list"> 
+                    <div class="row"> 
+                      <div class="col-lg-4">
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                      </div>
+                      <div class="col-lg-4">
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                      </div>
+                      <div class="col-lg-4">
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accardeon"> 
+                  <div class="accardeon__main"> 
+                    <div class="accardeon__name --green">Тело</div>
+                  </div>
+                  <div class="accardeon__list"> 
+                    <div class="row"> 
+                      <div class="col-lg-4">
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                      </div>
+                      <div class="col-lg-4">
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                      </div>
+                      <div class="col-lg-4">
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accardeon"> 
+                  <div class="accardeon__main"> 
+                    <div class="accardeon__name --red">Волосы</div>
+                  </div>
+                  <div class="accardeon__list"> 
+                    <div class="row"> 
+                      <div class="col-lg-4">
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                      </div>
+                      <div class="col-lg-4">
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                      </div>
+                      <div class="col-lg-4">
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accardeon"> 
+                  <div class="accardeon__main"> 
+                    <div class="accardeon__name --blue">Гинекология</div>
+                  </div>
+                  <div class="accardeon__list"> 
+                    <div class="row"> 
+                      <div class="col-lg-4">
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                      </div>
+                      <div class="col-lg-4">
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                      </div>
+                      <div class="col-lg-4">
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accardeon"> 
+                  <div class="accardeon__main"> 
+                    <div class="accardeon__name --purple">Лаборатория</div>
+                  </div>
+                  <div class="accardeon__list"> 
+                    <div class="row"> 
+                      <div class="col-lg-4">
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                      </div>
+                      <div class="col-lg-4">
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                      </div>
+                      <div class="col-lg-4">
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                        <label class="checkbox mainfilter__checkbox">
+                          <input type="checkbox"><span> </span>
+                          <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mainfilter__tab">
+                <div class="accardeon-group"> 
+                  <div class="accrdeon__title">Дерматовенерология</div>
+                  <div class="accardeon"> 
+                    <div class="accardeon__main"> 
+                      <div class="accardeon__name --yellow">Лицо</div>
+                    </div>
+                    <div class="accardeon__list"> 
+                      <div class="row"> 
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                        </div>
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                        </div>
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accardeon"> 
+                    <div class="accardeon__main"> 
+                      <div class="accardeon__name --green">Тело</div>
+                    </div>
+                    <div class="accardeon__list"> 
+                      <div class="row"> 
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                        </div>
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                        </div>
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accardeon"> 
+                    <div class="accardeon__main"> 
+                      <div class="accardeon__name --red">Волосы</div>
+                    </div>
+                    <div class="accardeon__list"> 
+                      <div class="row"> 
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                        </div>
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                        </div>
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accardeon"> 
+                    <div class="accardeon__main"> 
+                      <div class="accardeon__name --blue">Гинекология</div>
+                    </div>
+                    <div class="accardeon__list"> 
+                      <div class="row"> 
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                        </div>
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                        </div>
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accardeon-group"> 
+                  <div class="accrdeon__title">Эстетика</div>
+                  <div class="accardeon"> 
+                    <div class="accardeon__main"> 
+                      <div class="accardeon__name --blue">Гинекология</div>
+                    </div>
+                    <div class="accardeon__list"> 
+                      <div class="row"> 
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                        </div>
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                        </div>
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее </a>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accardeon"> 
+                    <div class="accardeon__main"> 
+                      <div class="accardeon__name --red">Гинекология</div>
+                    </div>
+                    <div class="accardeon__list"> 
+                      <div class="row"> 
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                        </div>
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                        </div>
+                        <div class="col-lg-4">
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                          </label>
+                          <label class="checkbox mainfilter__checkbox">
+                            <input type="checkbox"><span> </span>
+                            <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее </a>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mainfilter__tab">
+                <div class="accrdeon__title">Симптомы</div>
+                <div class="row"> 
+                  <div class="col-lg-4">
+                    <label class="checkbox mainfilter__checkbox">
+                      <input type="checkbox"><span> </span>
+                      <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                    </label>
+                    <label class="checkbox mainfilter__checkbox">
+                      <input type="checkbox"><span> </span>
+                      <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                    </label>
+                    <label class="checkbox mainfilter__checkbox">
+                      <input type="checkbox"><span> </span>
+                      <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                    </label>
+                    <label class="checkbox mainfilter__checkbox">
+                      <input type="checkbox"><span> </span>
+                      <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                    </label>
+                  </div>
+                  <div class="col-lg-4">
+                    <label class="checkbox mainfilter__checkbox">
+                      <input type="checkbox"><span> </span>
+                      <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                    </label>
+                    <label class="checkbox mainfilter__checkbox">
+                      <input type="checkbox"><span> </span>
+                      <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                    </label>
+                    <label class="checkbox mainfilter__checkbox">
+                      <input type="checkbox"><span> </span>
+                      <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                    </label>
+                    <label class="checkbox mainfilter__checkbox">
+                      <input type="checkbox"><span> </span>
+                      <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                    </label>
+                  </div>
+                  <div class="col-lg-4">
+                    <label class="checkbox mainfilter__checkbox">
+                      <input type="checkbox"><span> </span>
+                      <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                    </label>
+                    <label class="checkbox mainfilter__checkbox">
+                      <input type="checkbox"><span> </span>
+                      <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                    </label>
+                    <label class="checkbox mainfilter__checkbox">
+                      <input type="checkbox"><span> </span>
+                      <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее  </a>
+                    </label>
+                    <label class="checkbox mainfilter__checkbox">
+                      <input type="checkbox"><span> </span>
+                      <div class="checbox__name">Консультация врача</div><a class="checbox__link" href="#">Подробнее </a>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 mainfilter__right"> 
+          <div class="mainfilter__choice">
+            <h5 class="h5">Ваш выбор</h5>
+            <div class="mainfilter__tags"> 
+              <div class="mainfilter-tag">
+                <div class="mainfilter-tag__name">
+                  <div class="mainfilter-tag__delete"> 
+                        <svg class="svgsprite _delete">
+                          <use xlink:href="assets/img/sprites/svgsprites.svg#delete"></use>
+                        </svg>
+                  </div><a class="mainfilter-tag__link" href="#"> Аллергия на коже</a>
+                </div>
+                <div class="mainfilter-tag__group --yellow">Л</div>
+              </div>
+              <div class="mainfilter-tag">
+                <div class="mainfilter-tag__name">
+                  <div class="mainfilter-tag__delete"> 
+                        <svg class="svgsprite _delete">
+                          <use xlink:href="assets/img/sprites/svgsprites.svg#delete"></use>
+                        </svg>
+                  </div><a class="mainfilter-tag__link" href="#"> Аллергия на коже</a>
+                </div>
+                <div class="mainfilter-tag__group --green">Л</div>
+              </div>
+              <div class="mainfilter-tag">
+                <div class="mainfilter-tag__name">
+                  <div class="mainfilter-tag__delete"> 
+                        <svg class="svgsprite _delete">
+                          <use xlink:href="assets/img/sprites/svgsprites.svg#delete"></use>
+                        </svg>
+                  </div><a class="mainfilter-tag__link" href="#"> Аллергия на коже</a>
+                </div>
+                <div class="mainfilter-tag__group --red">Л</div>
+              </div>
+              <div class="mainfilter-tag">
+                <div class="mainfilter-tag__name">
+                  <div class="mainfilter-tag__delete"> 
+                        <svg class="svgsprite _delete">
+                          <use xlink:href="assets/img/sprites/svgsprites.svg#delete"></use>
+                        </svg>
+                  </div><a class="mainfilter-tag__link" href="#"> Аллергия на коже</a>
+                </div>
+                <div class="mainfilter-tag__group --blue">Л</div>
+              </div>
+              <div class="mainfilter-tag">
+                <div class="mainfilter-tag__name">
+                  <div class="mainfilter-tag__delete"> 
+                        <svg class="svgsprite _delete">
+                          <use xlink:href="assets/img/sprites/svgsprites.svg#delete"></use>
+                        </svg>
+                  </div><a class="mainfilter-tag__link" href="#"> Аллергия на коже</a>
+                </div>
+                <div class="mainfilter-tag__group --purple">Л</div>
+              </div>
+            </div>
+          </div>
+          <div class="mainfilter__bottom">
+            <form class="mainfilter__form">
+              <div class="mainfilter__form-top">
+                <h5 class="h5">Ваш выбор</h5>
+                <div class="input input--grey">
+                  <input type="text">
+                  <div class="input__placeholder">ФИО</div>
+                </div>
+                <div class="input input--grey">
+                  <input type="text">
+                  <div class="input__placeholder">Номер телефона</div>
+                </div>
+                <div class="input input--grey">
+                  <input type="text">
+                  <div class="input__placeholder">Ваш е-мейл</div>
+                </div>
+                <div class="form__description">Нажимая на кнопку "Перезвонить мне", Вы даете согласие на обработку своих персональных данных  на основании Политики конфиденциальности</div>
+                <button class="form__submit btn btn--black">Записаться</button>
+              </div>
+              <div class="mainfilter__form-bottom">После отправки заявки для Вас будет создан Личный кабинет, в который можно попасть через кнопку "Войти" в верхнем меню сайта</div>
+            </form>
+            <div class="mainfilter__succed"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="content">
       <main class="page page-no-padding-bottom">
         <div class="container">
@@ -178,7 +1077,7 @@
             <div class="footer__item col-xl-2">
               <p class="text-small">© ROSH, 2021</p>
             </div>
-            <div class="footer__item col-xl-3"><a class="text-small">Политика конфиденциальности</a></div>
+            <div class="footer__item col-xl-3"><a class="text-small" href="policy.html"> Политика конфиденциальности</a></div>
             <div class="footer__item col-xl-7 --flex --jcsb"><a class="text-small map-site" href="#">Карта сайта</a>
               <p class="text-small">Лицензия №ЛО-77-01-002172 от 12.01.2010</p><a class="develop" href="#"> 
                     <svg class="svgsprite _develop">
