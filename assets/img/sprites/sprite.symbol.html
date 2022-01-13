@@ -19,6 +19,7 @@ They might well be outsourced to an external stylesheet of course.
 -->
 
 <style type="text/css">
+	.svg-alert-dims { width: 17px; height: 15px; }
 	.svg-arrow-link-dims { width: 10px; height: 10px; }
 	.svg-burger-dims { width: 32px; height: 14px; }
 	.svg-close-dims { width: 20px; height: 20px; }
@@ -55,6 +56,7 @@ for further details on how to create this embeddable sprite variant.
 -->
 
 <svg width="0" height="0" style="position:absolute">
+		<symbol fill="none" viewBox="0 0 17 15" id="alert" xmlns="http://www.w3.org/2000/svg"><path d="M16.174 15H.828a.827.827 0 01-.717-.417.838.838 0 010-.833L7.783.416a.827.827 0 011.434 0l7.672 13.334a.838.838 0 010 .833.827.827 0 01-.716.417zM8.5 2.5L2.265 13.332H14.74L8.5 2.5zm.824 7.5H7.67V5.834h1.656V10z" fill="#363838"/><path d="M7.673 10.835H9.33V12.5H7.673v-1.666z" fill="#363838"/></symbol>
 		<symbol fill="none" viewBox="0 0 10 10" id="arrow-link" xmlns="http://www.w3.org/2000/svg"><path d="M1 1h8m0 0v8m0-8L1 9" stroke="#080E0D"/></symbol>
 		<symbol fill="none" viewBox="0 0 32 14" id="burger" xmlns="http://www.w3.org/2000/svg"><path fill="#080E0D" d="M0 0h32v2H0zM0 12h26v2H0z"/></symbol>
 		<symbol fill="none" viewBox="0 0 20 20" id="close" xmlns="http://www.w3.org/2000/svg"><path stroke="#363838" d="M19.354 1.354l-18 18M.646 1.354l18 18"/></symbol>
@@ -98,6 +100,17 @@ embedded above. They may be styled via CSS.
 			<h3>A) Inline SVG with embedded sprite</h3>
 			<ul>
 
+				<li title="alert">
+					<div class="icon-box">
+						
+						<!-- alert -->
+						<svg class="svg-alert-dims">
+							<use xlink:href="#alert"></use>
+						</svg>
+						
+					</div>
+					<h2>alert</h2>
+				</li>
 				<li title="arrow-link">
 					<div class="icon-box">
 						
@@ -273,6 +286,17 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 			<h3>B) Inline SVG with external sprite (IE 9-11 with polyfill only)</h3>
 			<ul>
 				
+				<li title="alert">
+					<div class="icon-box">
+						
+						<!-- alert -->
+						<svg class="svg-alert-dims">
+							<use xlink:href="svgsprites.svg#alert"></use>
+						</svg>
+						
+					</div>
+					<h2>alert</h2>
+				</li>
 				<li title="arrow-link">
 					<div class="icon-box">
 						
@@ -435,7 +459,7 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 
 		</section>
 		<footer>
-			<p>Generated at Tue, 11 Jan 2022 04:41:17 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+			<p>Generated at Thu, 13 Jan 2022 04:11:39 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
 		</footer>
 	</body>
 </html>
