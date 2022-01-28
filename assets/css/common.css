@@ -1798,6 +1798,22 @@ form {
   border-radius: 20px;
 }
 
+.svgsprite._socials-1 {
+  fill: #363838;
+}
+
+.svgsprite._socials-2 {
+  fill: #363838;
+}
+
+.svgsprite._socials-3 {
+  fill: #363838;
+}
+
+.svgsprite._socials-4 {
+  fill: #363838;
+}
+
 h1,
 h2,
 h3,
@@ -2998,6 +3014,25 @@ h5 {
   align-items: center;
 }
 
+.footer__contact {
+  transition: .4s;
+}
+
+.footer__contact:hover {
+  color: #080E0D;
+  text-decoration: underline;
+}
+
+.map-site,
+.policy {
+  transition: .4s;
+}
+
+.map-site:hover,
+.policy:hover {
+  color: #424242;
+}
+
 .header {
   margin-bottom: 72px;
 }
@@ -3172,6 +3207,10 @@ h5 {
 }
 
 .socials-menu .socials__link {
+  opacity: .4;
+}
+
+.socials-menu .socials__link:hover {
   opacity: 1;
 }
 
@@ -3348,24 +3387,39 @@ h5 {
   width: 100%;
   height: 45px;
   border-radius: 10px;
-  border: 1px solid #363838;
+  border: 1px solid #DADBDB;
   z-index: 10;
   padding-left: 20px;
+  transition: .4s;
+}
+
+.input input:focus {
+  border-color: #363838;
 }
 
 .input textarea {
   width: 100%;
   height: 100px;
   border-radius: 10px;
-  border: 1px solid #363838;
+  border: 1px solid #DADBDB;
   z-index: 10;
   padding-left: 20px;
   padding-top: 5px;
+  transition: .4s;
+}
+
+.input textarea:focus {
+  border-color: #363838;
 }
 
 .input--grey input,
 .input--grey textarea {
   border-color: #DADBDB;
+}
+
+.input--grey input:focus,
+.input--grey textarea:focus {
+  border-color: #363838;
 }
 
 .input__placeholder {
@@ -4325,6 +4379,32 @@ input:checked ~ .checbox__link {
   font-weight: bold;
 }
 
+.expert__img {
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.expert__img:hover:after {
+  opacity: .05;
+}
+
+.expert__img:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #424242;
+  opacity: 0;
+  transition: .4s;
+}
+
+.expert__img img {
+  width: 100%;
+}
+
 .title-flex {
   margin-bottom: 30px;
   position: relative;
@@ -4378,15 +4458,36 @@ input:checked ~ .checbox__link {
   max-width: 260px;
 }
 
+.recomendation:hover .recomendation__pic:after {
+  opacity: .05;
+}
+
+.recomendation:hover .recomendation__title {
+  color: #424242;
+}
+
 .recomendation__title {
   font-weight: bold;
   margin-bottom: 20px;
+  transition: .4s;
 }
 
 .recomendation__pic {
   overflow: hidden;
   border-radius: 20px;
   margin-bottom: 12px;
+}
+
+.recomendation__pic:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #424242;
+  opacity: 0;
+  transition: .4s;
 }
 
 .blog-inner__text {
@@ -4438,7 +4539,20 @@ input:checked ~ .checbox__link {
   justify-content: center;
   align-items: center;
   margin-right: 8px;
+  transition: .4s;
   opacity: 1;
+}
+
+.socials-blog .socials__link:hover {
+  background-color: #363838;
+}
+
+.socials-blog .socials__link:hover svg {
+  fill: #F4F2F0;
+}
+
+.socials-blog svg {
+  transition: .4s;
 }
 
 .recover h1.h1 {
@@ -4509,6 +4623,11 @@ h2.h2.education__time {
   width: calc(25% - 30px);
   margin-right: 30px;
   margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.equipment:hover .equipment__pic:after {
+  opacity: .05;
 }
 
 .equipment__pic {
@@ -4518,6 +4637,22 @@ h2.h2.education__time {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.equipment__pic:hover:after {
+  opacity: .05;
+}
+
+.equipment__pic:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #424242;
+  opacity: 0;
+  transition: .4s;
 }
 
 .contacts__socials {
@@ -4753,11 +4888,11 @@ h2.h2.education__time {
 }
 
 .inner-experts__pic {
-  height: 193px;
+  height: 219px;
   overflow: hidden;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
 }
 
 .inner-experts__info {
@@ -10468,6 +10603,10 @@ h2.h2.education__time {
     margin-bottom: 20px;
   }
 
+  .inputs {
+    max-width: 100%;
+  }
+
   .expert__photo {
     margin-bottom: 20px;
   }
@@ -10828,6 +10967,20 @@ h2.h2.education__time {
 @media (max-width: 480px) {
   .mainfilter__tab-item {
     font-size: 12px;
+  }
+
+  .callback {
+    display: block;
+  }
+
+  .callback--grey {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .callback__text {
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 }
 
